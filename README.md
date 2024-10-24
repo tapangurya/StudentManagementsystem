@@ -1,4 +1,4 @@
-![Uploading Screenshot (53).png…]()
+
 <span style="color:red">Student Management System</span>
 
 **About the Project:**
@@ -33,7 +33,7 @@ Deploy the project on your favorite servlet container (e.g., Tomcat).
 
 
 SignUpPage:
-![Uploading Screenshot (53).png…]()
+
 ![Screenshot (48)](https://github.com/user-attachments/assets/a91a689a-4de3-423b-9838-69ce2c375fc4)
 ![Screenshot (50)](https://github.com/user-attachments/assets/dffe104b-34cd-4561-a701-363e10fa2057)
 ![Screenshot (49)](https://github.com/user-attachments/assets/3ae6aa7c-b160-4148-896a-8c7f9979dd75)
