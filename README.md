@@ -32,7 +32,7 @@ mvn clean install
 Deploy the project on your favorite servlet container (e.g., Tomcat).
 
 Access the app:
-http://localhost:8080/StudentManagementSystem
+http://localhost:8080/adminSignup.jsp
 Screenshots
 SignUpPage:
 ![Uploading Screenshot (53).png…]()
