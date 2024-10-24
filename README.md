@@ -1,6 +1,6 @@
 <span style="color:red">Student Management System</span>
 
-**About the Project**
+**About the Project**\n
 The <span style="color:red">Student Management System</span> is a Java-based web application designed to streamline and automate academic administration processes for educational institutions. 
 It allows administrators to manage student information, course enrollment, attendance, and other essential academic tasks seamlessly.
 **Features**
