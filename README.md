@@ -37,6 +37,6 @@ SignUpPage:
 ![Screenshot (48)](https://github.com/user-attachments/assets/a91a689a-4de3-423b-9838-69ce2c375fc4)
 ![Screenshot (50)](https://github.com/user-attachments/assets/dffe104b-34cd-4561-a701-363e10fa2057)
 ![Screenshot (49)](https://github.com/user-attachments/assets/3ae6aa7c-b160-4148-896a-8c7f9979dd75)
-![Screenshot (51)](https://github.com/user-attachments/assets/67f2de87-0de1-4446-82ad-46886dfa593b)
+
 
 
