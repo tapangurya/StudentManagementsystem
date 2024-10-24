@@ -1,6 +1,7 @@
 <span style="color:red">Student Management System</span>
 
-**About the Project**\n
+**About the Project:**
+
 The <span style="color:red">Student Management System</span> is a Java-based web application designed to streamline and automate academic administration processes for educational institutions. 
 It allows administrators to manage student information, course enrollment, attendance, and other essential academic tasks seamlessly.
 **Features**
@@ -8,7 +9,9 @@ It allows administrators to manage student information, course enrollment, atten
 -Student Enrollment: Add, update, and remove student details including subjects, gender, DOB, and more.
 -User-friendly Interface: Developed with Java Servlets and JSP for a responsive, user-friendly experience.
 **Tech Stack**
--Backend: Java, Servlets, JDBC
+-Backend: Java, Servlets, JDBC![Screenshot (51)](https://github.com/user-attachments/assets/67f2de87-0de1-4446-82ad-46886dfa593b)
+
+
 -Frontend: JSP, HTML, CSS
 -Database: PostgreSQL
 -ORM: Hibernate
@@ -31,4 +34,9 @@ Access the app:
 http://localhost:8080/StudentManagementSystem
 Screenshots
 SignUpPage:
-![Screenshot (46)](https://github.com/user-attachments/assets/3eece480-48bf-4ddb-88ff-1c604f68e736)
+![Uploading Screenshot (53).png…]()
+![Screenshot (48)](https://github.com/user-attachments/assets/a91a689a-4de3-423b-9838-69ce2c375fc4)
+![Screenshot (50)](https://github.com/user-attachments/assets/dffe104b-34cd-4561-a701-363e10fa2057)
+![Screenshot (49)](https://github.com/user-attachments/assets/3ae6aa7c-b160-4148-896a-8c7f9979dd75)
+
+
