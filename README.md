@@ -31,9 +31,7 @@ Build the project using Maven:
 mvn clean install
 Deploy the project on your favorite servlet container (e.g., Tomcat).
 
-Access the app:
-http://localhost:8080/adminSignup.jsp
-Screenshots
+
 SignUpPage:
 ![Uploading Screenshot (53).png…]()
 ![Screenshot (48)](https://github.com/user-attachments/assets/a91a689a-4de3-423b-9838-69ce2c375fc4)
