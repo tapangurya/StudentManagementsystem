@@ -45,5 +45,43 @@ public class AdminDao {
 	}
 
 	
+	public boolean updateProfilePhoto(String email, String photoPath) {
+	    try {
+	        // Begin transaction
+	        et.begin();
+
+	        // Fetch the admin by email
+	        Query q = em.createQuery("select a from Admin a where a.email = :email");
+	        q.setParameter("email", email);
+
+	        List<Admin> list = q.getResultList();
+
+	        // If the admin exists, update the profile photo path
+	        if (!list.isEmpty()) {
+	            Admin admin = list.get(0);
+	            admin.setProfilePhotoPath(photoPath); // Assuming `Admin` has a setter for `profilePhotoPath`
+	            em.merge(admin);
+	        } else {
+	            // Admin with the specified email not found
+	            return false;
+	        }
+
+	        // Commit the transaction
+	        et.commit();
+	        return true;
+	    } catch (Exception e) {
+	        e.printStackTrace();
+
+	        // Rollback the transaction in case of an error
+	        if (et.isActive()) {
+	            et.rollback();
+	        }
+	        return false;
+	    }
+	}
+
+
+
+	
    
 }

@@ -40,7 +40,7 @@ public class UpdateStudentServlet extends HttpServlet{
    	       Admin admi = admindao.findByEId(adId);
    	       List<Student> listOfStudent = admi.getStudents();
    	    req.getSession().setAttribute("listOfStudent", listOfStudent);
-   	    resp.getWriter().print("<h1>"+s.getName()+" data Updated Success Fully</h1>");
+//   	    resp.getWriter().print("<h1>"+s.getName()+" data Updated Success Fully</h1>");
    	    
 		req.getRequestDispatcher("studentDashboard.jsp").include(req, resp);
    	       

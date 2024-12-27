@@ -25,7 +25,7 @@ public class AdminLoginServlet extends HttpServlet {
         if (ad != null) {
             if (ad.getPassword().equals(pass)) {
                 // Login successful
-                resp.getWriter().print("<h1>Login Successfully: " + ad.getEmail() + "</h1>");
+//                resp.getWriter().print("<h1>Login Successfully: " + ad.getEmail() + "</h1>");
                 HttpSession hs = req.getSession();
                 hs.setAttribute("ad", ad);
                 req.getRequestDispatcher("adminDashBorad.jsp").include(req, resp);

@@ -14,9 +14,9 @@ public class LogoutServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
 		
-		resp.getWriter().print("<h1>ADMIN LOG OUT SUCCESFULL</h1>");
+//		resp.getWriter().print("<h1>ADMIN LOG OUT SUCCESFULL</h1>");
+		req.getRequestDispatcher("home.jsp").include(req, resp);
 		req.getSession().invalidate();
-		req.getRequestDispatcher("login.jsp").include(req, resp);
 	}
 
 }

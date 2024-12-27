@@ -32,24 +32,25 @@
 body {
 	font-family: Arial, sans-serif;
 	background-image:
-		url("./high-angle-view-various-vegetables-black-background.jpg");
+		url("./background-learner1.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	display: flex;
-	padding-left: 370px;
+	padding-left: 400px;
 	align-items: center;
 	height: 100vh;
 	margin: 0;
 }
 
 .container {
+	margin-left:130px;
 	border: 2px solid #04f749;
 	border-radius: 8px;
 	padding: 20px;
 	box-shadow: 0 4px 15px #0400fd81;
 	background-color: transparent;
-	backdrop-filter: blur(20px);
+	backdrop-filter: blur(10px);
 	width: 350px; /* Set a fixed width */
 	height: 450px; /* Set a standard height */
 	display: flex; /* Use flexbox for alignment */

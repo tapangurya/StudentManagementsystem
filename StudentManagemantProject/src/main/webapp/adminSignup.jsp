@@ -1,5 +1,4 @@
- 
- <%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -11,7 +10,7 @@
 body {
 	font-family: Arial, sans-serif;
 	background-image:
-		url("./high-angle-view-various-vegetables-black-background.jpg");
+		url("city-committed-education-collage-concept.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -23,12 +22,14 @@ body {
 }
 
 .container {
+	margin-left:20px;
 	border: 2px solid #04f749;
 	border-radius: 8px;
 	padding: 20px;
+	padding-left:20px;
 	box-shadow: 0 4px 15px #0400fd81;
 	background-color: transparent;
-	backdrop-filter: blur(20px);
+	backdrop-filter: blur(5px);
 	width: 350px; /* Set a fixed width */
 	height: 450px; /* Set a standard height */
 	display: flex; /* Use flexbox for alignment */
@@ -169,4 +170,3 @@ input[type="submit"]:hover, input[type="reset"]:hover {
 	</form>
 </body>
 </html>
- 

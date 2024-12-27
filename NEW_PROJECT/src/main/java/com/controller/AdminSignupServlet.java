@@ -1,0 +1,38 @@
+package com.controller;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.dao.AdminDao;
+import com.dto.Admin;
+
+@WebServlet("/adminsignup")
+public class AdminSignupServlet extends HttpServlet {
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+      
+        String name = req.getParameter("name");
+        String email = req.getParameter("email");
+        String password = req.getParameter("pass");
+
+       
+        Admin adm = new Admin();
+        adm.setName(name);
+        adm.setEmail(email);
+        adm.setPassword(password);
+
+        
+        AdminDao dao = new AdminDao();
+        Admin admin = dao.saveAdmin(adm);
+        req.getSession().setAttribute("admin", admin);
+
+       
+        resp.getWriter().print("<h1>Admin Signup Successful</h1>");
+        req.getRequestDispatcher("adminLogin.jsp").include(req, resp);
+    }
+}

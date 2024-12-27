@@ -241,19 +241,67 @@
         #change-photo-form button:hover {
             background-color: #2980b9;
         }
+        
+        .modal {
+    display: block; /* Hidden by default, change to block for initial display */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover, .close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+        
     </style>
 </head>
 <body>
 	<%
         Admin admin = (Admin) session.getAttribute("ad");
         
-        if (admin != null) { 
-        %>
+	if (admin != null) {
+        String email = admin.getEmail();
+%>
+<%-- <script>
+    alert("Login Successfully: <%= email %>");
+</script> --%>
+
+    <div id="loginPopup" class="modal">
+	    <div class="modal-content">
+	        <span class="close-btn" onclick="closeModal()">&times;</span>
+	        <p>Login Successfully: <%= admin != null ? admin.getEmail() : "" %></p>
+	    </div>
+	</div>
     
 	<div class="navbar">
         <div class="brand">Admin Dashboard</div>
         <div class="profile-section" onclick="toggleProfile()">
-            <img src="profile-logo.jpg" alt="Profile Logo"> <!-- Use a valid image path -->
+            <img src="myPhoto.jpg" alt="Profile Logo"> <!-- Use a valid image path -->
             <div class="profile-name"><%=admin!=null?admin.getName():""%></div>
         </div>
     </div>
@@ -301,6 +349,10 @@
             } else {
                 userDetails.style.display = "none";
             }
+        }
+        
+        function closeModal() {
+            document.getElementById('loginPopup').style.display = 'none';
         }
     </script>
     <!-- Back button functionality -->

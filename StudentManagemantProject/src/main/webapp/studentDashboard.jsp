@@ -79,9 +79,9 @@
         }
 
         .main-content {
-            margin-left: 250px;
+            margin-left: 218px;
             padding:20px 7px 20px 0px;
-            width: calc(100% - 250px);
+            width: calc(100% - 200px);
         }
 
         /* Glowing Button Styles */
@@ -176,8 +176,8 @@
         <div><%= admin != null ? admin.getEmail() : "" %></div>
     </div>
 
-    <a href="menu.jsp">Home</a>
-    <a href="createfoodProduct.jsp">Add Food Product</a>
+    <a href="adminDashBorad.jsp">Home</a>
+    <a href="createstudent.jsp">Add Student</a>
     <a href="logout">Logout</a>
 </div>
 
@@ -228,10 +228,15 @@
         
         <a href="createstudent.jsp"><button class="btn-glow">AddStudent</button></a>
         <a href="adminDashBorad.jsp"><button class="btn-glow">Home</button></a>
-        <a href="logout"><button class="btn-glow">LOGOUT</button></a>
+        <a href="logout"><button class="btn-glow">LOGOUT</button></a> 
+        <button class="btn-glow" onclick="goBack()">Back</button></script>
 <%
     }
 %> 
 </div>
+<script type="text/javascript">
+function goBack() {
+	  window.history.back();
+	}</script>
 </body>
 </html>

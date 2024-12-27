@@ -22,9 +22,18 @@ public class Admin {
     @OneToMany(mappedBy = "admin", cascade = CascadeType.MERGE) // Relationship with Student
     private List<Student> students;
 
+    private String profilePhotoPath;
     // Getters and Setters
 
-    public int getId() {
+    public String getProfilePhotoPath() {
+		return profilePhotoPath;
+	}
+
+	public void setProfilePhotoPath(String profilePhotoPath) {
+		this.profilePhotoPath = profilePhotoPath;
+	}
+
+	public int getId() {
         return id;
     }
 
